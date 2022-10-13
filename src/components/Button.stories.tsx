@@ -13,34 +13,3 @@ export default {
 } as Meta<ButtonProps>;
 
 export const Default: StoryObj = {};
-
-export const Small: StoryObj = {
-  args: {
-    size: "sm",
-  },
-};
-
-export const Large: StoryObj = {
-  args: {
-    size: "lg",
-  },
-};
-
-export const CustomComponent = {
-  args: {
-    asChild: true,
-    children: <p>Text with P</p>,
-  },
-  argTypes: {
-    children: {
-      table: {
-        disable: true,
-      },
-    },
-    asChild: {
-      table: {
-        disable: true,
-      },
-    },
-  },
-};
