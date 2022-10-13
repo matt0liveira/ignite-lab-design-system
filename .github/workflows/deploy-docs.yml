@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploys:
-    runs-on: ubunt-latest
+    runs-on: windows-latest
 
     steps:
       - name: Checkout
@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci --force
+        run: npm ci --legacy-peers-deps
 
       - name: Build Storybook
         run: npm run build-storybook
